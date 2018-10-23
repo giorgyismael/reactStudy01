@@ -9,6 +9,12 @@ module.exports = {
     devServer:{
         port:8080,
         contentBase: __dirname+"/public",
+    }, 
+    //resolve é utilizado para resolver as extensões dos componentes, modulos, etc
+    //não sendo necessário colocar o tipo do arquivo, mas somente o nome. Exemplo
+    //import Component from './component.jsx' --> './component'
+    resolve:{
+        extensions:['','.js','.jsx']
     },
     module:{
         loaders:[{
