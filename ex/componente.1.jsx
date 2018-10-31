@@ -12,9 +12,12 @@ import React from 'react'
 //Toda a função/componente react tem propriedades --> "props", e para definir estas propriedades, basta defini-las 
 //na tag que a criou passando parâmetros
 
+const ComponentTree = props => <h1>Terceiro Componente</h1>
+const ComponentFour = props => <h1>Quarto Componente</h1>
 
-export const ComponentOne = props => <h1>Primeiro Componente</h1>
-export const ComponentTwo = props => <h1>Segundo Componente</h1>
+//Outra Forma de Exporta
+export {ComponentTree, ComponentFour}
+
 
 //E por último, quando existe uma função com export default
 // o nome da função vira o nome do arquivo
